@@ -1,9 +1,6 @@
 services:
   - type: web
     name: hilaytv-proxy
-    env: node
+    runtime: node
     buildCommand: npm install
     startCommand: node server.js
-    envVars:
-      - key: PORT
-        value: 3000
